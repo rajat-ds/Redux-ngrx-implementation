@@ -1,27 +1,24 @@
-# Dashboard
+# Aim
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0-next.0.
+This project was basically developed to lear implementation of ngrx in Angular.
 
-## Development server
+## Redux
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+It is an opensource javascript library for managing the state.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+##Advantages 
+Predictable: Redux helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test.
+Centralized : Centralizing your application's state and logic enables powerful capabilities like undo/redo, state persistence, and much more.
+Debuggable : The Redux DevTools make it easy to trace when, where, why, and how your application's state changed. Redux's architecture lets you log changes, use "time-travel debugging", and even send complete error reports to a server.
+Flexible : Redux works with any UI layer, and has a large ecosystem of addons to fit your needs.
 
-## Build
+## ngrx/store
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Store is RxJS powered global state management for Angular applications, inspired by Redux. Store is a controlled state container designed to help write performant, consistent applications on top of Angular.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Key Concepts 
+* Actions describe unique events that are dispatched from components and services.
+* State changes are handled by pure functions called reducers that take the current state and the latest action to compute a new state.
+* Selectors are pure functions used to select, derive and compose pieces of state.
+* State is accessed with the Store, an observable of state and an observer of actions.
